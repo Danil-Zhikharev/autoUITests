@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b28641a-142e-4b78-bd0b-7c741bf93235" name="Changes" comment="Commit_24.12_16:05">
+    <list default="true" id="8b28641a-142e-4b78-bd0b-7c741bf93235" name="Changes" comment="Commit_26.12_11:47">
       <change afterPath="$PROJECT_DIR$/src/test/java/ru/smpr/web/TopologyAddAndSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/smpr/web/AuthenticationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smpr/web/AuthenticationTests.java" afterDir="false" />
     </list>
@@ -90,29 +88,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AuthenticationTests.cheakHiddingPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.smpr.web.AuthenticationTests.cheakHiddingPassword&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="AuthenticationTests.successAuthentication" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -159,7 +134,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AuthenticationTests.unsuccessfulAuthentication" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TopologyAddAndSearch" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -172,7 +147,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.smpr.web.AuthenticationTests.unsuccessfulAuthentication&quot;" />
+            <option value="&quot;ru.smpr.web.TopologyAddAndSearch&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TopologyAddAndSearch.addRegion" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.smpr.web.TopologyAddAndSearch.addRegion&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -185,10 +183,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.AuthenticationTests" />
+        <item itemvalue="Gradle.TopologyAddAndSearch" />
+        <item itemvalue="Gradle.TopologyAddAndSearch.addRegion" />
         <item itemvalue="Gradle.AuthenticationTests.successAuthentication" />
         <item itemvalue="Gradle.AuthenticationTests.successAuthenticationCapsLogin" />
-        <item itemvalue="Gradle.AuthenticationTests.unsuccessfulAuthentication" />
-        <item itemvalue="Gradle.AuthenticationTests.cheakHiddingPassword" />
       </list>
     </recent_temporary>
   </component>
@@ -208,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671879953779</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit_26.12_11:47">
+      <created>1672037298687</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672037298687</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,6 +229,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit_24.12_16:05" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit_24.12_16:05" />
+    <MESSAGE value="Commit_26.12_11:47" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit_26.12_11:47" />
   </component>
 </project>

@@ -13,13 +13,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AuthenticationTests {
 
-    String url = "http://192.168.30.181/smpr/";
-
     @BeforeEach
     void settings() {
+        Configuration.baseUrl = "http://192.168.30.181/smpr/";
         Configuration.timeout = 10000;
         Configuration.headless = true;
-        open(url);
+        open(Configuration.baseUrl);
     }
 
     @Test
