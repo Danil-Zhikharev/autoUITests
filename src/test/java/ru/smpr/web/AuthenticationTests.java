@@ -13,19 +13,21 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AuthenticationTests {
 
+    String url = "http://192.168.30.181/smpr/";
+
     @BeforeEach
     void settings() {
         Configuration.timeout = 10000;
         Configuration.headless = true;
-        open("http://192.168.30.181/smpr/");
+        open(url);
     }
 
     @Test
     void successAuthentication() {
         $(By.name("username")).shouldHave(type("text")).shouldHave(attribute("placeholder", "Логин")).sendKeys("polygon");
         $(By.name("password")).shouldHave(type("password")).shouldHave(attribute("placeholder", "Пароль")).sendKeys("123123");
-        $(By.cssSelector("button")).click();
-        $(By.xpath("//*[contains(text(),'Формы визуализации')]")).shouldBe(visible);
+        $("button").click();
+        $x("//*[contains(text(),'Формы визуализации')]").shouldBe(visible);
         closeWindow();
     }
 
@@ -33,8 +35,8 @@ public class AuthenticationTests {
     void successAuthenticationCapsLogin() {
         $(By.name("username")).sendKeys("POLYGON");
         $(By.name("password")).sendKeys("123123");
-        $(By.cssSelector("button")).click();
-        $(By.xpath("//*[contains(text(),'Формы визуализации')]")).shouldBe(visible);
+        $("button").click();
+        $x("//*[contains(text(),'Формы визуализации')]").shouldBe(visible);
         closeWindow();
     }
 
@@ -42,11 +44,11 @@ public class AuthenticationTests {
     void unsuccessfulAuthentication() {
         $(By.name("username")).sendKeys("falseLogin");
         $(By.name("password")).sendKeys("falsePassword");
-        $(By.cssSelector("button")).click();
-        $(By.xpath("//*[contains(text(),'попытка входа не удалась')]")).shouldBe(visible);
+        $("button").click();
+        $x("//*[contains(text(),'попытка входа не удалась')]").shouldBe(visible);
         String expectedMessage = "Ваша попытка входа не удалась, попробуйте еще раз.\n" +
                 "Причина: Bad credentials";
-        String actualMessage = $(By.xpath("//*[contains(text(),'попытка входа не удалась')]")).getText().trim();
+        String actualMessage = $x("//*[contains(text(),'попытка входа не удалась')]").getText().trim();
         assertEquals(actualMessage, expectedMessage);
         closeWindow();
     }
@@ -54,11 +56,11 @@ public class AuthenticationTests {
     @Test
     void unsuccessfulAuthenticationEmptyLogin() {
         $(By.name("password")).sendKeys("123123");
-        $(By.cssSelector("button")).click();
-        $(By.xpath("//*[contains(text(),'попытка входа не удалась')]")).shouldBe(visible);
+        $("button").click();
+        $x("//*[contains(text(),'попытка входа не удалась')]").shouldBe(visible);
         String expectedMessage = "Ваша попытка входа не удалась, попробуйте еще раз.\n" +
                 "Причина: Empty Username";
-        String actualMessage = $(By.xpath("//*[contains(text(),'попытка входа не удалась')]")).getText().trim();
+        String actualMessage = $x("//*[contains(text(),'попытка входа не удалась')]").getText().trim();
         assertEquals(actualMessage, expectedMessage);
         closeWindow();
     }
@@ -66,22 +68,22 @@ public class AuthenticationTests {
     @Test
     void unsuccessfulAuthenticationEmptyPassword() {
         $(By.name("username")).sendKeys("polygon");
-        $(By.cssSelector("button")).click();
-        $(By.xpath("//*[contains(text(),'попытка входа не удалась')]")).shouldBe(visible);
+        $("button").click();
+        $x("//*[contains(text(),'попытка входа не удалась')]").shouldBe(visible);
         String expectedMessage = "Ваша попытка входа не удалась, попробуйте еще раз.\n" +
                 "Причина: Empty Password";
-        String actualMessage = $(By.xpath("//*[contains(text(),'попытка входа не удалась')]")).getText().trim();
+        String actualMessage = $x("//*[contains(text(),'попытка входа не удалась')]").getText().trim();
         assertEquals(actualMessage, expectedMessage);
         closeWindow();
     }
 
     @Test
     void unsuccessfulAuthenticationEmptyForm() {
-        $(By.cssSelector("button")).click();
-        $(By.xpath("//*[contains(text(),'попытка входа не удалась')]")).shouldBe(visible);
+        $("button").click();
+        $x("//*[contains(text(),'попытка входа не удалась')]").shouldBe(visible);
         String expectedMessage = "Ваша попытка входа не удалась, попробуйте еще раз.\n" +
                 "Причина: Empty Username";
-        String actualMessage = $(By.xpath("//*[contains(text(),'попытка входа не удалась')]")).getText().trim();
+        String actualMessage = $x("//*[contains(text(),'попытка входа не удалась')]").getText().trim();
         assertEquals(actualMessage, expectedMessage);
         closeWindow();
     }

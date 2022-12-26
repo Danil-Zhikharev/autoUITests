@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b28641a-142e-4b78-bd0b-7c741bf93235" name="Changes" comment="Commit_24.12_16:05">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/smpr/web/TopologyAddAndSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/smpr/web/AuthenticationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smpr/web/AuthenticationTests.java" afterDir="false" />
     </list>
@@ -49,8 +52,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_directory_selection": "C:/Users/User/IdeaProjects/newUITests/src/test/java"
+    "last_directory_selection": "C:/Users/User/IdeaProjects/newUITests/src/test/java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RunAnythingCache">
@@ -58,7 +66,7 @@
       <command value="gradlew test -Dselenide.headless=true" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.AuthenticationTests.successAuthentication">
+  <component name="RunManager" selected="Gradle.AuthenticationTests">
     <configuration name="AuthenticationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -176,9 +184,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AuthenticationTests" />
         <item itemvalue="Gradle.AuthenticationTests.successAuthentication" />
         <item itemvalue="Gradle.AuthenticationTests.successAuthenticationCapsLogin" />
-        <item itemvalue="Gradle.AuthenticationTests" />
         <item itemvalue="Gradle.AuthenticationTests.unsuccessfulAuthentication" />
         <item itemvalue="Gradle.AuthenticationTests.cheakHiddingPassword" />
       </list>
