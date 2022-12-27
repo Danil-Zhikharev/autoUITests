@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b28641a-142e-4b78-bd0b-7c741bf93235" name="Changes" comment="Commit_26.12_11:47">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/smpr/web/TopologyAddAndSearch.java" afterDir="false" />
+    <list default="true" id="8b28641a-142e-4b78-bd0b-7c741bf93235" name="Changes" comment="Commit_26.12_18:28">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/smpr/web/TopologyAddSearchDelete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smpr/web/AuthenticationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smpr/web/AuthenticationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,23 +49,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_directory_selection": "C:/Users/User/IdeaProjects/newUITests/src/test/java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/User/IdeaProjects/newUITests/src/test/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradlew test -Dselenide.headless=true" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.AuthenticationTests">
+  <component name="RunManager" selected="Gradle.TopologyAddSearchDelete">
     <configuration name="AuthenticationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -88,7 +89,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AuthenticationTests.successAuthentication" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AuthenticationTests.unsuccessfulAuthentication" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -101,30 +102,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.smpr.web.AuthenticationTests.successAuthentication&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="AuthenticationTests.successAuthenticationCapsLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.smpr.web.AuthenticationTests.successAuthenticationCapsLogin&quot;" />
+            <option value="&quot;ru.smpr.web.AuthenticationTests.unsuccessfulAuthentication&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -157,7 +135,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TopologyAddAndSearch.addRegion" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TopologyAddSearchDelete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -170,7 +148,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.smpr.web.TopologyAddAndSearch.addRegion&quot;" />
+            <option value="&quot;ru.smpr.web.TopologyAddSearchDelete&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="TopologyAddSearchDelete.addRegion" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.smpr.web.TopologyAddSearchDelete.addRegion&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -182,11 +183,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TopologyAddSearchDelete" />
+        <item itemvalue="Gradle.TopologyAddSearchDelete.addRegion" />
+        <item itemvalue="Gradle.AuthenticationTests.unsuccessfulAuthentication" />
         <item itemvalue="Gradle.AuthenticationTests" />
         <item itemvalue="Gradle.TopologyAddAndSearch" />
-        <item itemvalue="Gradle.TopologyAddAndSearch.addRegion" />
-        <item itemvalue="Gradle.AuthenticationTests.successAuthentication" />
-        <item itemvalue="Gradle.AuthenticationTests.successAuthenticationCapsLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672037298687</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit_26.12_12:14">
+      <created>1672038869131</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672038869131</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,6 +238,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit_24.12_16:05" />
     <MESSAGE value="Commit_26.12_11:47" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit_26.12_11:47" />
+    <MESSAGE value="Commit_26.12_12:14" />
+    <MESSAGE value="Commit_26.12_18:28" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit_26.12_18:28" />
   </component>
 </project>
