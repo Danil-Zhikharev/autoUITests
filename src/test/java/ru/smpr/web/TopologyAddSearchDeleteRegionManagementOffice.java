@@ -6,13 +6,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
-
-
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$x;
 
-
-public class TopologyAddSearchDelete {
+public class TopologyAddSearchDeleteRegionManagementOffice {
 
     static String login = "polygon";
     static String  password = "123123";
@@ -21,8 +19,9 @@ public class TopologyAddSearchDelete {
     String desc = "Тестовое описание";
     Integer id = 12345;
 
+    String rmoName = "РДУ Земли";
 
-
+    Integer rmoId = 67890;
 
     @BeforeAll
     public static void authentication() {
@@ -48,15 +47,35 @@ public class TopologyAddSearchDelete {
     }
 
     @Test
-    void addRegion() throws InterruptedException {
+    void addRegionManagementOffice() throws InterruptedException {
         $x("//*[contains(text(), 'Справочник объектов')]").click();
         $x("//*[contains(text(), 'Добавить регион')]").click();
         $x("//*[contains(text(), 'Идентификатор')][contains(@class, 'z-label')]/ancestor::td/following-sibling::td/descendant::*[@type='text']").setValue(String.valueOf(id));
         $x("//*[contains(text(), 'Наименование')][contains (@class,'z-label')]/ancestor::td/following-sibling::td/descendant::*[@type='text']").setValue(region);
         $x("//*[contains(text(), 'Хост')][contains (@class,'z-label')]/ancestor::td/following-sibling::td/descendant::*[@type='text']").setValue(String.valueOf(id));
-        $x("//*[contains(text(), 'Командный порт')][contains (@class,'z-label')]/ancestor::td/following-sibling::td/descendant::*[@type='text']").setValue(String.valueOf(id));
+        $x("//*[contains(text(), 'Хост')][contains (@class,'z-label')]/ancestor::td/following-sibling::td/descendant::*[@type='text']").setValue(String.valueOf(id));
+        $(".z-spinner-input").setValue(String.valueOf(id));
+        $x("//*[@class='z-spinner-icon z-spinner-up']").hover().click();
+        $x("//*[@class='z-spinner-icon z-spinner-down']").hover().click();
         $x("//*[contains(text(), 'Описание')][contains (@class,'z-label')]/ancestor::td/following-sibling::td/descendant::textarea").setValue(desc);
         saveAndReload();
+        $x("//button[contains(text(), 'Свернуть')]/parent::*/following-sibling::*/*[contains(@placeholder, 'Поиск')]").setValue(region);
+        $x("//*[contains(text(), 'Добавить РДУ')]/parent::div/child::*[contains(text(), 'Добавить РДУ')]").hover();
+        $x("//*[contains(text(), 'Добавить РДУ')]/parent::div/child::*[contains(text(), 'Добавить РДУ')]").click();
+        $x("//*[contains(text(), 'Идентификатор')][contains(@class, 'z-label')]/ancestor::td/following-sibling::td/descendant::*[@type='text']").setValue(String.valueOf(rmoId));
+        $x("//*[contains(text(), 'Наименование')][contains (@class,'z-label')]/ancestor::td/following-sibling::td/descendant::*[@type='text']").setValue(rmoName);
+        $x("//*[contains(text(), 'Хост')][contains (@class,'z-label')]/ancestor::td/following-sibling::td/descendant::*[@type='text']").setValue(String.valueOf(rmoId));
+        $(".z-spinner-input").setValue(String.valueOf(id));
+        $x("//*[@class='z-spinner-icon z-spinner-up']").hover().click();
+        $x("//*[@class='z-spinner-icon z-spinner-down']").hover().click();
+        $x("//*[contains(text(), 'Описание')][contains (@class,'z-label')]/ancestor::td/following-sibling::td/descendant::textarea").setValue(desc);
+        saveAndReload();
+        $x("//button[contains(text(), 'Свернуть')]/parent::*/following-sibling::*/*[contains(@placeholder, 'Поиск')]").setValue(rmoName);
+        $x("(//*[@title='Удалить']/parent::div/child::*[@title='Удалить'])[2]").hover();
+        $x("(//*[@title='Удалить']/parent::div/child::*[@title='Удалить'])[2]").click();
+        Thread.sleep(1000);
+        $x("//button[contains(text(), 'Свернуть')]/parent::*/following-sibling::*/*[contains(@placeholder, 'Поиск')]").setValue(rmoName);
+        $x("//span[contains(text(), 'не найдены')][@style='width: 150px;']").isDisplayed();
         $x("//button[contains(text(), 'Свернуть')]/parent::*/following-sibling::*/*[contains(@placeholder, 'Поиск')]").setValue(region);
         $x("//*[@title='Удалить']/parent::div/child::*[@title='Удалить']").hover();
         $x("//*[@title='Удалить']/parent::div/child::*[@title='Удалить']").click();
