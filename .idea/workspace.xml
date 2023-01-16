@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b28641a-142e-4b78-bd0b-7c741bf93235" name="Changes" comment="Commit_27.12_12:16 TopologyAddSearchDeleteRegionManagementOffice">
+    <list default="true" id="8b28641a-142e-4b78-bd0b-7c741bf93235" name="Changes" comment="Commit_16.01_10:38 fixed Settings of headless mod">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,10 +52,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_directory_selection": "C:/Users/User/IdeaProjects/newUITests/src/test/java",
-    "last_opened_file_path": "C:/Users/zda/IdeaProjects/autoUITests",
+    "last_opened_file_path": "C:/Users/zda/Desktop/Git/rays-tests/rays/ui-auto/autoUITests",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="RunAnythingCache">
@@ -179,12 +180,25 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="autoUITests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="autoUITests" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.TopologyAddSearchDeleteRegionManagementOffice" />
-        <item itemvalue="Gradle.TopologyAddSearchDeleteRegionManagementOffice.addRegionManagementOffice" />
         <item itemvalue="Gradle.TopologyAddSearchDeleteRegion" />
         <item itemvalue="Gradle.AuthenticationTests" />
+        <item itemvalue="Gradle.TopologyAddSearchDeleteRegionManagementOffice.addRegionManagementOffice" />
         <item itemvalue="Gradle.TopologyAddSearchDelete" />
       </list>
     </recent_temporary>
@@ -233,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673250242288</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Commit_16.01_10:38 fixed Settings of headless mod">
+      <created>1673847534974</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673847534974</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -254,6 +275,7 @@
     <MESSAGE value="Commit_26.12_18:28" />
     <MESSAGE value="Commit_27.12_12:16 TopologyAddSearchDelete" />
     <MESSAGE value="Commit_27.12_12:16 TopologyAddSearchDeleteRegionManagementOffice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit_27.12_12:16 TopologyAddSearchDeleteRegionManagementOffice" />
+    <MESSAGE value="Commit_16.01_10:38 fixed Settings of headless mod" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit_16.01_10:38 fixed Settings of headless mod" />
   </component>
 </project>
