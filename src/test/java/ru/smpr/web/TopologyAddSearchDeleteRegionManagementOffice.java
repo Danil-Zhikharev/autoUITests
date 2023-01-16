@@ -25,7 +25,6 @@ public class TopologyAddSearchDeleteRegionManagementOffice {
 
     @BeforeAll
     public static void authentication() {
-        Configuration.headless = true;
         Configuration.baseUrl = "http://192.168.30.181/smpr/";
         open(Configuration.baseUrl);
         $(By.name("username")).shouldHave(type("text")).shouldHave(attribute("placeholder", "Логин")).sendKeys(login);
